@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1600px) {
+  .logo {
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 0;
+    height: 150px;
+    width: auto;
+  }
+  .background__img {
+    width: 90vw;
+    margin: 20px 4vw;
+    text-align: center;
+    position: relative;
+  }
+  .citat {
+    /* position: absolute; */
+    position: fixed;
+    left: 28%;
+    bottom: 20%;
+    font-size: 0.9em;
+    color: azure;
+    display: block;
+    max-width: 50em;
+    font-family: "Baloo Chettan 2", cursive, sans-serif;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 140px;
+    width: auto;
+  }
+
+  .citat {
+    position: absolute;
+    left: 28%;
+    bottom: 28%;
+    font-size: 0.7em;
+    max-width: 40em;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 120px;
+  }
+
+  .citat {
+    position: absolute;
+    left: 28%;
+    bottom: 32%;
+    font-size: 0.7em;
+    max-width: 40em;
+    position: fixed;
+  }
+}

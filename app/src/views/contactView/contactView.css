@@ -1,0 +1,39 @@
+.contact__section {
+  display: flex;
+  width: 98vw;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.backgroundForm__img {
+  display: block;
+  height: 19vw;
+  width: auto;
+  margin: 1vw;
+}
+.backgroundForm__img:hover {
+  opacity: 0.7;
+  margin: 0.7;
+  height: 20vw;
+  width: auto;
+}
+
+.form__button {
+  display: block;
+  margin: 3vw auto;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  width: 40%;
+  height: 40px;
+  max-width: 50vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: white;
+}
+.form__button:hover {
+  font-size: 34px;
+}

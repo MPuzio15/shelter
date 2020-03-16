@@ -1,0 +1,11 @@
+.dog__img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90vw;
+  height: 50vw;
+}
+
+.dog__img__item {
+  height: 30vw;
+}
