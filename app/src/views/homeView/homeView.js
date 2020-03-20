@@ -29,7 +29,7 @@ class HomeView extends React.Component {
     return (
       <div className="picture">
         <img className="background__img" src={Background} />
-        <p className="citat">{this.getCitat()} </p>{" "}
+        <p className="citat">{this.getCitat()} </p>
       </div>
     );
   }
