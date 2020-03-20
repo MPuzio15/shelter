@@ -2,94 +2,70 @@
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
+.picture {
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
 
-@media (orientation: landscape) and (max-width: 1600px) {
-  .logo {
-    margin-left: 1vw;
-    margin-top: 0;
-    height: 12vw;
-    width: auto;
-    position: absolute;
-  }
-  .background__img {
-    width: 90vw;
-    margin: 0.5vw 4vw;
-    text-align: center;
-    position: relative;
-  }
+.background__img {
+  width: 100%;
+  height: 100%;
+}
+
+.citat {
+  position: absolute;
+  left: 20%;
+  top: 44%;
+  width: 40%;
+  color: azure;
+  font-size: 1rem;
+  font-family: "Baloo Chettan 2", cursive, sans-serif;
+}
+
+
+@media (orientation: landscape) and (max-width: 1024px) {
   .citat {
-    position: absolute;
-    left: 28%;
-    bottom: 14%;
-    font-size: 0.9em;
-    color: azure;
-    display: block;
-    max-width: 30em;
-    font-family: "Baloo Chettan 2", cursive, sans-serif;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 1024px) {
-  .citat {
-    left: 28%;
-    bottom: 32%;
-    font-size: 0.7em;
-  }
-}
 @media (orientation: portrait) and (max-width: 820px) {
   .citat {
-    left: 28%;
-    top: 40%;
-    font-size: 0.6em;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .citat {
-    left: 24%;
-    top: 45%;
-    font-size: 0.6em;
-  }
-}
-@media (max-width: 640px) {
-  .citat {
-    left: 28%;
-    top: 38%;
-    font-size: 0.5em;
-    max-width: 35em;
-  }
-}
-@media (max-width: 560px) {
-  .citat {
-    left: 28%;
-    top: 53%;
-    font-size: 0.5em;
-  }
-}
-@media (max-width: 500px) {
-  .citat {
-    left: 28%;
-    top: 40%;
-    font-size: 0.45em;
+    font-size: 0.7em;
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 640px) {
   .citat {
-    top: 43%;
-    font-size: 0.4em;
+    font-size: 0.6rem;
   }
 }
+
+@media (max-width: 560px) {
+  .citat {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .citat {
+    font-size: 0.45rem;
+  }
+}
+
 @media (max-width: 360px) {
   .citat {
-    left: 20%;
-    top: 37%;
-    font-size: 0.32em;
+    font-size: 0.4rem;
   }
 }
