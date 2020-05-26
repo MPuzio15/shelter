@@ -1,0 +1,33 @@
+.messageContact {
+    color: #4A3029;
+    font-size: 1.1rem;
+    line-height: 5rem;
+    letter-spacing: 2px;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.messageContact p {
+    margin-bottom: 5%;
+}
+
+@media(max-width: 800px) {
+    .messageContact {
+        width: 80vw;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 460px) {
+    .messageContact {
+        width: 80vw;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 320px) {
+    .messageContact {
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+}

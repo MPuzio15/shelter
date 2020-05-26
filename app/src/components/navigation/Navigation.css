@@ -1,58 +1,124 @@
-:root {
-  --navHeight: 12vw;
-  --bodyHeight: 70vw;
-  --navWidth: 70vw;
+.navContainer {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  width: 100%;
+  background-color: white;
 }
 
-.logo {
-  position: absolute;
-  margin-top: 0;
-  margin-left: 0;
-  height: var(--navHeight);
-  width: calc(100% - var(--navWidth));
+.logoDiv {
+  width: 100%;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+nav {
+  margin-top: 1%;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(251, 249, 249);
+  border: 1px solid #331610;
 }
 
 .navigation__wrapper__ul {
-  position: relative;
   list-style: none;
-  width: var(--navWidth);
-  height: var(--navHeight);
-  margin-left: calc(100% - var(--navWidth));
+  width: 100vw;
+  height: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.navigation__li {
+  text-transform: uppercase;
+  text-align: center;
+  flex-basis: 33%;
 }
 
 .navigation__Link {
   text-decoration: none;
   color: black;
+  letter-spacing: 3px;
+  width: 100%;
   border: none;
   font-size: 1.4vw;
-  display: block;
-}
-
-.navigation__li {
-  display: flex;
-  align-items: center;
-  align-content: flex-end;
-  line-height: var(--navHeight);
-  text-transform: uppercase;
-  width: 20vw;
-  font-size: 1rem;
   text-align: center;
 }
 
 .navigation__li :hover {
-  color: black;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3.5px;
 }
 
 .navigation__Link__active {
   font-weight: bold;
-  background-color: rgb(200, 218, 221);
-  letter-spacing: 2px;
+  color: #331610;
+}
+
+@media(max-width: 960px) {
+  .navigation__Link {
+    letter-spacing: 4px;
+    font-size: 1.5vw;
+  }
+
+  .navigation__li :hover {
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation__Link {
+    letter-spacing: 3px;
+    font-size: 1.7vw;
+  }
+
+  .navigation__li :hover {
+    letter-spacing: 3.5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navigation__Link {
+    letter-spacing: 3px;
+    font-size: 2vw;
+  }
+
+  .navigation__li :hover {
+    letter-spacing: 3.4px;
+  }
+}
+
+@media (max-width: 560px) {
+  .navigation__Link {
+    letter-spacing: 2px;
+    font-size: 2.2vw;
+  }
+
+  .navigation__li :hover {
+    letter-spacing: 2.4px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navigation__Link {
+    letter-spacing: 1.5px;
+    font-size: 2.4vw;
+  }
+
+  .navigation__li :hover {
+    letter-spacing: 1.6px;
+  }
 }

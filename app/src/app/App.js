@@ -1,16 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomeView from "../homeView/homeView";
-import PeopleView from "../peopleView/peopleView";
-import ContactView from "../contactView/contactView";
-import Navigation from "../../components/navigation/Navigation";
-import Logo from "../../components/logo/Logo";
+import HomeView from "../views/homeView/homeView";
+import PeopleView from "../views/peopleView/peopleView";
+import ContactView from "../views/contactView/contactView";
+import Navigation from "../components/navigation/Navigation";
 
-class Root extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <>
-        <Logo />
         <BrowserRouter>
           <Navigation />
           <Switch>
@@ -24,4 +22,4 @@ class Root extends React.Component {
   }
 }
 
-export default Root;
+export default App;

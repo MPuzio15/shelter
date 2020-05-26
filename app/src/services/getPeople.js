@@ -2,11 +2,10 @@ const PERSON_URL = "https://randomuser.me/api/?results=30";
 let allPeople = [];
 export function getPeople() {
   return fetch(PERSON_URL)
-    .then(response => {
-      debugger;
+    .then((response) => {
       return response.json();
     })
-    .then(response => {
+    .then((response) => {
       allPeople = response.results;
       return allPeople;
     });

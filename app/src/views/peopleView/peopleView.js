@@ -8,15 +8,14 @@ class PeopleView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      people: []
+      people: [],
     };
   }
 
   componentDidMount() {
-    debugger;
-    getPeople().then(allPeople => {
+    getPeople().then((allPeople) => {
       this.setState({
-        people: allPeople
+        people: allPeople,
       });
     });
   }

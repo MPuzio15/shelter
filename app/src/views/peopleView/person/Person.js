@@ -6,7 +6,9 @@ class Person extends React.Component {
     const { name, picture } = this.props;
     return (
       <li className="listItem__wrapper">
-        <img className="listItem__image" src={picture} alt={name.first} />
+        <div className="image_div">
+          <img className="listItem__image" src={picture} alt={name.first} />
+        </div>
         <div>
           <h2 className="listItem__name">{name.first}</h2>
         </div>
