@@ -7,10 +7,10 @@ class Person extends React.Component {
     return (
       <li className="listItem__wrapper">
         <div className="image_div">
-          <img className="listItem__image" src={picture} alt={name.first} />
+          <img className="listItem__image" src={picture} alt={name} />
         </div>
         <div>
-          <h2 className="listItem__name">{name.first}</h2>
+          <h2 className="listItem__name">{name}</h2>
         </div>
       </li>
     );
