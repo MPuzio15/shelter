@@ -2,7 +2,7 @@ import React from "react";
 import "../peopleView/peopleView.css";
 import Person from "./person/Person";
 import { getAllDogs } from "../../services/getPeople";
-import Doggie from "../../components/piesek/Piesek";
+import Doggie from "../../components/doggie/Doggie";
 
 class PeopleView extends React.Component {
   constructor(props) {

@@ -52,45 +52,49 @@ class Form extends React.Component {
           <div className="form__header__wrapper">
             <h3 className="form__header">Formularz</h3>
           </div>
-          <div className="form__item">
-            <input
-              type="text"
-              placeholder="Twoje imię"
-              name="username"
-              value={this.state.username}
-              onChange={this.handlChange}
-            />
+          <div className="inputs">
+            <div className="form__item">
+              <input
+                type="text"
+                placeholder="Twoje imię"
+                name="username"
+                value={this.state.username}
+                onChange={this.handlChange}
+              />
+            </div>
+            <div className="form__item">
+              <input
+                type="email"
+                placeholder="Twój adres e-mail"
+                name="email"
+                value={this.state.email}
+                onChange={this.handlChange}
+              />
+            </div>
+            <div className="form__item">
+              <input
+                type="phone"
+                placeholder="Twój numer telefonu"
+                name="phone"
+                value={this.state.phone}
+                onChange={this.handlChange}
+              />
+            </div>
+            <div className="form__item">
+              <textarea
+                type="text"
+                placeholder="Dodatkowe informacje"
+                name="additionalInfo"
+                value={this.state.additionalInfo}
+                onChange={this.handlChange}
+              />
+            </div>
           </div>
-          <div className="form__item">
-            <input
-              type="email"
-              placeholder="Twój adres e-mail"
-              name="email"
-              value={this.state.email}
-              onChange={this.handlChange}
-            />
-          </div>
-          <div className="form__item">
-            <input
-              type="phone"
-              placeholder="Twój numer telefonu"
-              name="phone"
-              value={this.state.phone}
-              onChange={this.handlChange}
-            />
-          </div>
-          <div className="form__item">
-            <textarea
-              type="text"
-              placeholder="Dodatkowe informacje"
-              name="additionalInfo"
-              value={this.state.additionalInfo}
-              onChange={this.handlChange}
-            />
-          </div>
-          <button className="form__button" type="submit">
-            Submit
+          <div className="submit__button">
+            <button className="form__button" type="submit">
+              Submit
           </button>
+          </div>
         </form>
         {this.state.message && (
           <h6 className="form__message">{this.state.message}</h6>

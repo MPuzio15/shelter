@@ -1,6 +1,6 @@
 import React from "react";
 import DogImg from "../../images/piesek.gif";
-import "../piesek/Piesek.css";
+import "./Doggie.css";
 
 const Doggie = () => {
   return (

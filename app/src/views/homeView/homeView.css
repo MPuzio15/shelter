@@ -42,6 +42,32 @@ html {
   letter-spacing: 5px;
   font-family: "Arial", "cursive", "sans-serif";
 }
+.about_us_wrapper{
+  width: 100%;
+  height: auto;
+  color: #4A3029;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.about_us_wrapper h3{
+  line-height: 2.3rem;
+  font-size: 2rem;
+  flex-basis: 20%;
+  margin: 5rem 0;
+  letter-spacing: 5px;
+}
+.about_us_wrapper article{
+  flex-basis: 70%;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  width: 70%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 
 
 @media (orientation: landscape) and (max-width: 1024px) {
@@ -63,7 +89,21 @@ html {
     line-height: 2.4rem;
     letter-spacing: 4px;
   }
-
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .about_us_wrapper{
+    margin: 3rem 0;
+  }
+  .about_us_wrapper h3{
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    margin: 4rem 0;
+  }
+  .about_us_wrapper article{
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+    width: 80%;
+  }
 }
 
 @media (max-width: 820px) {
@@ -84,6 +124,22 @@ html {
     font-size: 1rem;
     line-height: 2rem;
     letter-spacing: 3px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  .about_us_wrapper{
+    margin: 3rem 0;
+  }
+  .about_us_wrapper h3{
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+  }
+  .about_us_wrapper article{
+    line-height: 2.4rem;
+    font-size: 1.1rem;
+    width: 80%;
   }
 }
 
@@ -109,7 +165,7 @@ html {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 414px) {
   .picture {
     margin-top: 12vw;
   }
@@ -127,6 +183,19 @@ html {
     font-size: 0.8rem;
     line-height: 1.7rem;
     letter-spacing: 2.5px;
+  }
+  .about_us_wrapper{
+    margin: 3rem 0;
+  }
+  .about_us_wrapper h3{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+  .about_us_wrapper article{
+    line-height: 1.9rem;
+    font-size: 0.9rem;
+    width: 90%;
   }
 }
 
@@ -149,5 +218,21 @@ html {
     font-size: 0.7rem;
     line-height: 1.7rem;
     letter-spacing: 2px;
+  }
+  .about_us_wrapper{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+  .about_us_wrapper h3{
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+  }
+  .about_us_wrapper article{
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+    width: 90%;
   }
 }

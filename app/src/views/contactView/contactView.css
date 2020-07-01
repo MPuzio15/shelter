@@ -1,3 +1,7 @@
+.contact_wrapper{
+    min-height: 120vh;
+}
+
 .messageContact {
     color: #4A3029;
     font-size: 1.1rem;
@@ -11,11 +15,26 @@
     margin-bottom: 5%;
 }
 
+@media(orientation: portrait) and (max-width: 1024px){
+    .contact_wrapper{
+        min-height: 80vh;
+    }
+  }
+  @media(orientation: portrait) and (max-width: 768px){
+    .contact_wrapper{
+        min-height: 120vh;
+    }
+    .contact_wrapper{
+        min-height: 77vh;
+    } 
+  }
+
 @media(max-width: 800px) {
     .messageContact {
         width: 80vw;
         font-size: 1rem;
     }
+    
 }
 
 @media(max-width: 460px) {
@@ -23,11 +42,23 @@
         width: 80vw;
         font-size: 0.7rem;
     }
+    .contact_wrapper{
+        min-height: 70vh;
+    } 
 }
-
+@media(max-width: 375px) {
+    .contact_wrapper{
+        min-height: 70vh;
+    }
+}
+@media(max-width: 360px) {
+    .contact_wrapper{
+        min-height: 80vh;
+    }
+}
 @media(max-width: 320px) {
     .messageContact {
-        width: 80vw;
+        width: 100vw;
         font-size: 0.8rem;
     }
 }
